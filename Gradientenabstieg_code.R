@@ -22,7 +22,7 @@ max_steps = 30
 
 # Definition von Funktionen  -----------------------------------------------------------------------#  
 
-# Defx0ion der Funktion die minimiert werden soll
+# Definition der Funktion die minimiert werden soll
 fun = function(x1,x2){
   #' Definition der zu minimierenden Funktion
   #' Input: x1, x2 beide floats als Argumente der Funktion
@@ -31,7 +31,7 @@ fun = function(x1,x2){
   return(sin(x1)*cos(x2))
 }
 
-# Defx0ion des Gradienten der Funktion
+# Definition des Gradienten der Funktion
 gradient = function(x1,x2){
   #' Gibt die partiellen Ableitungen der Funktion an 
   #' Input: x1, x2 beide floats als Argumente der Funktion
