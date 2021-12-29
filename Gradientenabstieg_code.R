@@ -24,7 +24,7 @@ max_steps = 30
 
 # Defx0ion der Funktion die minimiert werden soll
 fun = function(x1,x2){
-  #' Defx0ion der zu minimierenden Funktion
+  #' Definition der zu minimierenden Funktion
   #' Input: x1, x2 beide floats als Argumente der Funktion
   #' Output: 1d float der den Funktionswert angibt
   
@@ -117,7 +117,8 @@ gradient_descent=function(x0, # Startwert
        xlim=x1lim,
        xlab=expression(x[1]),
        ylab = expression(x[2]),
-       col='red')
+       col='red'
+       )
   
   contour(x, y, z,col = 'darkgray',nlevels=25,add=T)
   
@@ -129,9 +130,10 @@ gradient_descent=function(x0, # Startwert
     arrows(x0=x_0,
            y0=y_0,
            x1 =x_0-gamma*gradient(x_0,y_0)[1],
-           y1=y_0 -gamma*gradient(x_0,y_0)[2],
+           y1 =y_0-gamma*gradient(x_0,y_0)[2],
            col=1,
-           length=0.08)
+           length=0.08
+           )
   }
   
   if (individual_vec==TRUE){
@@ -143,14 +145,16 @@ gradient_descent=function(x0, # Startwert
            x1=x_0-gamma*gradient(x_0,y_0)[1],
            y1=y_0,
            col="blue",
-           length=0.08)
+           length=0.08
+           )
     
     arrows(x0=x_0,
            y0=y_0,
            x1=x_0,
            y1=y_0-gamma*gradient(x_0,y_0)[2],
            col="blue",
-           length=0.08)
+           length=0.08
+           )
     
   }
   
@@ -161,7 +165,8 @@ gradient_descent=function(x0, # Startwert
        xlim=c(0,iter_global),
        xlab=expression(n),
        ylab=expression('x'[1]),
-       col='red')
+       col='red'
+       )
   
   plot(memory[2,],
        type='b',
@@ -169,7 +174,8 @@ gradient_descent=function(x0, # Startwert
        xlim=c(0,iter_global),
        xlab=expression(n),
        ylab=expression('x'[2]),
-       col='red')
+       col='red'
+       )
   
   # Rückgabe der Iterationsschritte
   return(memory)
@@ -187,4 +193,5 @@ m=gradient_descent(x0=x0,
                    iter_global=10,
                    crit=0.01,
                    plot_vec=TRUE,
-                   individual_vec=TRUE)
+                   individual_vec=TRUE
+                   )
