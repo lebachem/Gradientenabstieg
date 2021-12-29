@@ -36,3 +36,31 @@ gamma = 1
 ~~~ 
 max_steps = 30
 ~~~ 
+
+## Veränderung der Funktion
+
+Im Skript ist die Funktion die mithilfe des Verfahrens des steilsten Abstiegs minimiert werden soll mit 
+
+~~~ 
+fun = function(x1,x2){
+  #' Definition der zu minimierenden Funktion
+  #' Input: x1, x2 beide floats als Argumente der Funktion
+  #' Output: 1d float der den Funktionswert angibt
+  
+  return(sin(x1)*cos(x2))
+}
+~~~ 
+und der Gradient mit
+~~~ 
+gradient = function(x1,x2){
+  #' Gibt die partiellen Ableitungen der Funktion an 
+  #' Input: x1, x2 beide floats als Argumente der Funktion
+  #' Output: Vektor der partiellen Ableitungen
+
+  dell_f_dell_x1=cos(x1)*cos(x2) # partielle Ableitung nach x1
+  dell_f_dell_x2=-sin(x1)*sin(x2) # partielle Ableitung nach x2
+  
+  return(c(dell_f_dell_x1,dell_f_dell_x2))
+}
+~~~ 
+angegeben. Wenn eine andere Funktion minimiert werden soll, so reicht es die Funktion und den Gradienten im Code zu verändern.
