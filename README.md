@@ -23,10 +23,16 @@ x2lim = c(-0.5*pi,0.5*pi) # Entlang der X2-Achse
  ~~~ 
  
 ### Starwerte
+~~~ 
 x0 = c(-0.2,1)
+~~~ 
 
 ### Schrittweite
+~~~ 
 gamma = 1
+~~~ 
 
 ### Maximale Anzahl Schritte
+~~~ 
 max_steps = 30
+~~~ 
