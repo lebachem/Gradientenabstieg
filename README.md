@@ -17,9 +17,11 @@ Damit kann das Skript ausgeführt werden.
  Die dazugehörigen Parameter werden direkt im Skript gesetzt.
 
 ### Grenzen der Funktion für die wir uns interessieren
+ ~~~ 
 x1lim = c(-pi,0) # Entlang der X-Achse
 x2lim = c(-0.5*pi,0.5*pi) # Entlang der Y-Achse
-
+ ~~~ 
+ 
 ### Starwerte
 x0 = c(-0.2,1)
 
