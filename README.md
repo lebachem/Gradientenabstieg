@@ -18,8 +18,8 @@ Damit kann das Skript ausgeführt werden.
 
 ### Grenzen der Funktion für die wir uns interessieren
  ~~~ 
-x1lim = c(-pi,0) # Entlang der X-Achse
-x2lim = c(-0.5*pi,0.5*pi) # Entlang der Y-Achse
+x1lim = c(-pi,0) # Entlang der X1-Achse
+x2lim = c(-0.5*pi,0.5*pi) # Entlang der X2-Achse
  ~~~ 
  
 ### Starwerte
